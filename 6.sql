@@ -17,7 +17,13 @@ use week6_9285;
 -- exec sp_addrolemember 'db_datareader', 'API9285'
 -- go
 
-drop table if exists booking,
+drop table if exists booking
+drop table if exists [event]
+drop table if exists client
+drop table if EXISTS tour
+
+drop view if exists clientList
+drop view if exists BookingSummary
 
 Create table tour(
     tourName NVARCHAR(20) PRIMARY KEY,
